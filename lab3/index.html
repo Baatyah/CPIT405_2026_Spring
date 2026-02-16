@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 03</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .image-preview img {
+        display: block;
+        border-style: solid;
+        border-width: 30px;
+        border-top-color: skyblue;
+        border-right-color: lightpink;
+        border-bottom-color: lightgreen;
+        border-left-color: #ffefd5;
+      }
+
+      p > span { color: red; }
+      #header span { color: pink; }
+      span { color: green; }
+      #header *:last-child { color: orange; }
+      #header span:first-child:hover { color: blue; }
+
+      table {
+        border-collapse: collapse;
+        margin-top: 16px;
+      }
+      th, td {
+        border: 1px solid #000;
+        padding: 6px 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lab 03: CSS Structure and Properties</h1>
+
+    <div class="image-preview">
+      <img src="https://cpit405.gitlab.io/images/KAU_logo.png" alt="KAU logo">
+    </div>
+
+    <div id="header">
+      <span class="myclass1">Every</span>
+      <span class="myclass2">one can</span>
+      <span class="myclass3">success.</span>
+    </div>
+    <p>One machine can do the work of fifty ordinary men.
+      <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>element</th>
+          <th>color</th>
+          <th>color when mouse over</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>span.myclass1</td>
+          <td>pink</td>
+          <td>blue</td>
+        </tr>
+        <tr>
+          <td>span.myclass2</td>
+          <td>pink</td>
+          <td>pink</td>
+        </tr>
+        <tr>
+          <td>span.myclass3</td>
+          <td>orange</td>
+          <td>orange</td>
+        </tr>
+        <tr>
+          <td>span.myclass4</td>
+          <td>red</td>
+          <td>red</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
