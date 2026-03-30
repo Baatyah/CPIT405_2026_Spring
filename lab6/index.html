@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="page">
+
+
+        <section class="lab-panel">
+            <h2 class="lab-number">Lab 6</h2>
+            <h3 class="section-title">Like or dislike</h3>
+
+            <div class="vote-panel" aria-label="Voting controls">
+                <button id="like-button" class="vote-button" type="button">
+                    <span class="vote-emoji">👍</span>
+                    <span id="like-count" class="vote-count">0</span>
+                </button>
+                <button id="dislike-button" class="vote-button" type="button">
+                    <span class="vote-emoji">👎</span>
+                    <span id="dislike-count" class="vote-count">0</span>
+                </button>
+            </div>
+
+            <form id="comment-form" class="comment-form">
+                <label class="section-title comments-title" for="comment-input">Comments</label>
+                <textarea id="comment-input" name="comment" maxlength="200" placeholder="Write a comment..."></textarea>
+                <div class="action-row">
+                    <button id="comment-submit" type="submit">Submit</button>
+                    <button id="reset-button" class="reset-button" type="button">Clear</button>
+                </div>
+            </form>
+
+            <p id="status-message" class="status-message" aria-live="polite"></p>
+            <ul id="comments-list" class="comments-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
