@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 - Unsplash Search API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="page">
+        <section class="toolbar">
+            <h1>Unsplash API</h1>
+            <input id="query" type="text" placeholder="Search images" value="Makkah">
+            <div class="button-row">
+                <button id="xhrBtn" type="button">Search with XHR</button>
+                <button id="fetchBtn" type="button">Search with Fetch Promises</button>
+                <button id="asyncBtn" type="button">Search with Fetch Async/Await</button>
+            </div>
+            <p id="status" class="status">Enter your Access Key, then choose a search method.</p>
+        </section>
+
+        <p id="methodLabel" class="method-label">No request sent yet.</p>
+        <section id="gallery" class="gallery"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
