@@ -1,0 +1,119 @@
+:root {
+    --page-bg: #f4f7fb;
+    --card-bg: #ffffff;
+    --primary: #0b5ed7;
+    --primary-dark: #084298;
+    --text-main: #1f2933;
+    --text-muted: #52606d;
+    --border: #d9e2ec;
+    --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #eef4ff 0%, var(--page-bg) 100%);
+    color: var(--text-main);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.page-shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 20px 32px;
+}
+
+.hero {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 32px;
+    margin-bottom: 28px;
+}
+
+.hero h1 {
+    margin: 0 0 8px;
+    font-size: 2.2rem;
+}
+
+.course-title {
+    margin: 0 0 18px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.content-panel {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.content-panel h1,
+.content-panel h2 {
+    margin-top: 0;
+}
+
+.content-panel {
+    padding: 28px;
+}
+
+.content-panel h2 {
+    margin-top: 28px;
+}
+
+.portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.portfolio-table th {
+    background: #eaf2ff;
+}
+
+.portfolio-table tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 640px) {
+    .hero,
+    .content-panel {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-table th,
+    .portfolio-table td {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}
